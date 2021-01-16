@@ -11,4 +11,8 @@ class Cell: UICollectionViewCell {
     
     @IBOutlet weak var temperatureImage: UIImageView!
     
+    func setTemperatureImage(thermName:String) {
+        temperatureImage! = UIImageView(image: UIImage(named: thermName))
+    }
+    
 }
